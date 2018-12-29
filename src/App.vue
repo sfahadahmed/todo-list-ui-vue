@@ -1,26 +1,18 @@
 <template>
   <div id="app">
-    <!--<img alt="Vue logo" src="./assets/logo.png">-->
-    <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+    <img alt="Vue logo" src="./assets/logo.png">
     <h1 class="title">Todo List</h1>
-    <list-items></list-items>
-    <hr size="1">
-    <add-item></add-item>
+    <todo-items-list></todo-items-list>   
   </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-import AddItem from "./components/AddItem.vue";
-import EditItem from "./components/EditItem.vue";
-import ListItems from "./components/ListItems.vue";
+import TodoItemsList from "./components/TodoItemsList.vue";
 
 export default {
   name: 'app',
   components: {
-    AddItem,
-    EditItem,
-    ListItems
+    TodoItemsList
   }
 }
 </script>
